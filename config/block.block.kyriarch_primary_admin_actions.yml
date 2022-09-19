@@ -1,0 +1,20 @@
+uuid: 67f01fa6-6ec1-4ab3-9369-730fe143fe60
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: kyriarch_primary_admin_actions
+theme: kyriarch
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
