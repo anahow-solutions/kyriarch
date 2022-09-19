@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/menu_link_attributes": "^1.2",
+        "drupal/paragraphs": "^1.15",
         "drupal/quicktabs": "^3.0@alpha",
         "drush/drush": "^10.2"
     },
