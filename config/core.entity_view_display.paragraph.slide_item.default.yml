@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.slide_item.field_description
+    - field.field.paragraph.slide_item.field_image
     - field.field.paragraph.slide_item.field_title
     - paragraphs.paragraphs_type.slide_item
+  module:
+    - image
 id: paragraph.slide_item.default
 targetEntityType: paragraph
 bundle: slide_item
@@ -17,6 +20,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_title:
     type: string
