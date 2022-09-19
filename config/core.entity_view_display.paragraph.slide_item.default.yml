@@ -1,0 +1,43 @@
+uuid: d3bc14b6-3163-42b5-80c5-9eba379b0ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_item.field_description
+    - field.field.paragraph.slide_item.field_image
+    - field.field.paragraph.slide_item.field_title
+    - paragraphs.paragraphs_type.slide_item
+  module:
+    - image
+id: paragraph.slide_item.default
+targetEntityType: paragraph
+bundle: slide_item
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
