@@ -1,0 +1,22 @@
+uuid: 08429236-a24a-4f71-8271-f239a74bd624
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: kyriarch_secondary_local_tasks
+theme: kyriarch
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

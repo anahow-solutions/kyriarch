@@ -1,0 +1,22 @@
+uuid: d98b79b5-38c1-482a-ab2c-5c060a9c6f74
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: kyriarch_primary_local_tasks
+theme: kyriarch
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
