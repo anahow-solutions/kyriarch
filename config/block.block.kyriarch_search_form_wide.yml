@@ -1,0 +1,23 @@
+uuid: 28485be3-b50a-4318-93e3-51ba29d460d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: kyriarch_search_form_wide
+theme: kyriarch
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

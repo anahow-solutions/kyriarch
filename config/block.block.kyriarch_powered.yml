@@ -1,0 +1,22 @@
+uuid: b9d85234-cc1c-4a29-b075-8c2493cd1b57
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: kyriarch_powered
+theme: kyriarch
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

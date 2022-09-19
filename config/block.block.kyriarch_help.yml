@@ -1,0 +1,22 @@
+uuid: 9fa1c718-c49a-45d0-b4fa-da0f4b9c4b12
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - kyriarch
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: kyriarch_help
+theme: kyriarch
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
