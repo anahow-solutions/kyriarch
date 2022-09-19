@@ -1,0 +1,21 @@
+uuid: d3bc14b6-3163-42b5-80c5-9eba379b0ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_item.field_title
+    - paragraphs.paragraphs_type.slide_item
+id: paragraph.slide_item.default
+targetEntityType: paragraph
+bundle: slide_item
+mode: default
+content:
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
