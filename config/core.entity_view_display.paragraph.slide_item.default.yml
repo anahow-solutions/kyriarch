@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.slide_item.field_description
     - field.field.paragraph.slide_item.field_title
     - paragraphs.paragraphs_type.slide_item
 id: paragraph.slide_item.default
@@ -10,6 +11,13 @@ targetEntityType: paragraph
 bundle: slide_item
 mode: default
 content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_title:
     type: string
     label: above
