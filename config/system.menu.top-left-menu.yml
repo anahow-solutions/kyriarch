@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: top-left-menu
-label: 'Top Left Menu'
+label: 'Top left menu'
 description: ''
 locked: false
