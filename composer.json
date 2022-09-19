@@ -20,6 +20,8 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/link_attributes": "^1.11",
+        "drupal/menu_link_attributes": "^1.2",
         "drupal/quicktabs": "^3.0@alpha",
         "drush/drush": "^10.2"
     },
