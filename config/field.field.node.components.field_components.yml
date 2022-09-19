@@ -1,10 +1,13 @@
-uuid: b1318667-c4b8-4b7c-91a0-b6e46361b073
+uuid: c8422152-b370-47cc-929a-d03bcbdef778
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_components
     - node.type.components
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
 id: node.components.field_components
 field_name: field_components
 entity_type: node
@@ -16,13 +19,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      components: components
-    sort:
-      field: _none
-      direction: ASC
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+      slideshow: slideshow
+    negate: 0
+    target_bundles_drag_drop:
+      slide_item:
+        weight: 4
+        enabled: false
+      slideshow:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions
