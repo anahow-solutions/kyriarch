@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '11a281c6042f5e41e4b683d9bf35e466d8c8f79b',
+        'reference' => '67a4b4ab0da6280ea670191095564feb8ceade5a',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -385,6 +385,15 @@
             'reference' => '8.x-1.1',
             'dev_requirement' => false,
         ),
+        'drupal/menu_link_attributes' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/menu_link_attributes',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
         'drupal/quicktabs' => array(
             'pretty_version' => '3.0.0-alpha5',
             'version' => '3.0.0.0-alpha5',
@@ -400,7 +409,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '11a281c6042f5e41e4b683d9bf35e466d8c8f79b',
+            'reference' => '67a4b4ab0da6280ea670191095564feb8ceade5a',
             'dev_requirement' => false,
         ),
         'drush/drush' => array(
