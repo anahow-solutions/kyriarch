@@ -1,0 +1,30 @@
+uuid: 276d2bdd-c663-4969-acb3-9b5806f8955d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.categories.field_categories
+    - field.field.paragraph.categories.field_tags
+    - paragraphs.paragraphs_type.categories
+id: paragraph.categories.default
+targetEntityType: paragraph
+bundle: categories
+mode: default
+content:
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
