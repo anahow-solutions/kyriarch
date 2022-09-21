@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_components
     - node.type.components
     - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_with_images
   module:
     - entity_reference_revisions
 id: node.components.field_components
@@ -23,6 +24,7 @@ settings:
   handler_settings:
     target_bundles:
       slideshow: slideshow
+      text_with_images: text_with_images
     negate: 0
     target_bundles_drag_drop:
       slide_item:
@@ -30,5 +32,8 @@ settings:
         enabled: false
       slideshow:
         weight: 3
+        enabled: true
+      text_with_images:
+        weight: 6
         enabled: true
 field_type: entity_reference_revisions
