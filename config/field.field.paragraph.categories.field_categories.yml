@@ -1,0 +1,29 @@
+uuid: 7dfeea75-26fa-444f-b2cc-a16b04cc4b4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categories
+    - paragraphs.paragraphs_type.categories
+    - taxonomy.vocabulary.service_categories
+id: paragraph.categories.field_categories
+field_name: field_categories
+entity_type: paragraph
+bundle: categories
+label: Categories
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      service_categories: service_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
