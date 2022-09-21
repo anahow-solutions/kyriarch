@@ -4,11 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_with_images.field_about_description
-    - field.field.paragraph.text_with_images.field_about_images
     - field.field.paragraph.text_with_images.field_about_title
     - paragraphs.paragraphs_type.text_with_images
-  module:
-    - image
 id: paragraph.text_with_images.default
 targetEntityType: paragraph
 bundle: text_with_images
@@ -20,17 +17,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_about_images:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_about_title:
     type: string
