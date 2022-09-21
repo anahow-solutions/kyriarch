@@ -1,0 +1,8 @@
+uuid: 19b46eac-c3dd-4b85-9d36-9a05f066295a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Categories'
+vid: service_categories
+description: ''
+weight: 0
