@@ -5,7 +5,13 @@ dependencies:
   config:
     - field.storage.node.field_components
     - node.type.components
+    - paragraphs.paragraphs_type.categories
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.icon
+    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_with_image
     - paragraphs.paragraphs_type.text_with_images
   module:
     - entity_reference_revisions
@@ -23,17 +29,41 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      slideshow: slideshow
+      text: text
+      text_with_image: text_with_image
       text_with_images: text_with_images
+      image: image
+      categories: categories
+      icon: icon
+      hero: hero
+      slideshow: slideshow
     negate: 0
     target_bundles_drag_drop:
+      categories:
+        weight: -15
+        enabled: true
+      hero:
+        weight: -13
+        enabled: true
+      icon:
+        weight: -14
+        enabled: true
+      image:
+        weight: -16
+        enabled: true
       slide_item:
-        weight: 4
+        weight: -11
         enabled: false
       slideshow:
-        weight: 3
+        weight: -12
+        enabled: true
+      text:
+        weight: -19
+        enabled: true
+      text_with_image:
+        weight: -18
         enabled: true
       text_with_images:
-        weight: 6
+        weight: -17
         enabled: true
 field_type: entity_reference_revisions
