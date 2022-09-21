@@ -1,0 +1,23 @@
+uuid: 52c5510e-c5f4-494a-89f9-97fe71c71150
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_images.field_about_title
+    - paragraphs.paragraphs_type.text_with_images
+id: paragraph.text_with_images.default
+targetEntityType: paragraph
+bundle: text_with_images
+mode: default
+content:
+  field_about_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
