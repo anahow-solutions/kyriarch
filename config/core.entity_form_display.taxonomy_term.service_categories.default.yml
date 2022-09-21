@@ -1,0 +1,23 @@
+uuid: 7e6b2d7c-fa8e-47eb-be09-326cc5407db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.service_categories
+id: taxonomy_term.service_categories.default
+targetEntityType: taxonomy_term
+bundle: service_categories
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true
