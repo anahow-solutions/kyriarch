@@ -27,3 +27,5 @@
 adminer.php
 adminer.sql
 logs/
+
+apps/mysql
