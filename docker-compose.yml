@@ -1,0 +1,42 @@
+version: "3"
+services:
+  kyriarch-php:
+    #image: php:fpm-alpine
+    #image: php:8.1-fpm
+    build:
+      context: .
+      dockerfile: apps/php/Dockerfile
+    image: timhtheos/kyriarch-php
+    container_name: kyriarch-php
+    hostname: kyriarch-php
+    network_mode: bridge
+    volumes:
+      - ./:/var/www/html:rw
+    links:
+      - kyriarch-mariadb:mariadb
+  kyriarch-nginx:
+    image: nginx:1.17.4-alpine
+    container_name: kyriarch-nginx
+    hostname: kyriarch-nginx
+    restart: unless-stopped
+    ports:
+      - 8081:80/tcp
+    volumes:
+      - ./:/var/www/html:rw
+      - ./apps/nginx:/etc/nginx/conf.d:rw
+    network_mode: bridge
+    links:
+      - kyriarch-mariadb:mariadb
+      - kyriarch-php:php
+  kyriarch-mariadb:
+    image: mariadb:10.3
+    restart: always
+    container_name: kyriarch-mariadb
+    hostname: kyriarch-mariadb
+    network_mode: bridge
+    ports:
+      - 3306:3306/tcp
+    volumes:
+      - ./apps/mysql:/var/lib/mysql:rw
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
